@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3975e3f-72aa-42e5-ae84-e5cf7d91511c" name="Changes" comment="Criação da classe Contéudo, Bootcamp e Dev">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desafio-poo-dio/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desafio-poo-dio/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desafio-poo-dio/br/com/dio/desafio/dominio/Curso.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desafio-poo-dio/br/com/dio/desafio/dominio/Curso.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desafio-poo-dio/br/com/dio/desafio/dominio/Mentoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desafio-poo-dio/br/com/dio/desafio/dominio/Mentoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" afterDir="false" />
-    </list>
+    <list default="true" id="b3975e3f-72aa-42e5-ae84-e5cf7d91511c" name="Changes" comment="Teste das classes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +60,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646076263500</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Teste das classes">
+      <created>1646079882193</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646079882193</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Teste das classes">
+      <created>1646079989682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646079989682</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +90,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criação da classe Contéudo, Bootcamp e Dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação da classe Contéudo, Bootcamp e Dev" />
+    <MESSAGE value="Teste das classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste das classes" />
   </component>
 </project>
