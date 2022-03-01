@@ -34,9 +34,9 @@ public class Main {
 
 
 
-        //Obriga a construtor  a receber todas as informações no momento da criação
-        //A instância só será criada se o CPF for válido
 
+        //É necessário o construtor  receber todas as informações no momento da criação
+        //A instância só será criada se o CPF for válido
         Dev devMeireles = new Dev("Jorge","78965412316","Rio de Janeiro","Nova Iguaçu","Brasil");
         Dev devSouza= new Dev("Antônio","14965445687","São Paulo","Osasco","Brasil");
 
