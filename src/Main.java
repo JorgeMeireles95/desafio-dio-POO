@@ -37,8 +37,33 @@ public class Main {
 
         //É necessário o construtor  receber todas as informações no momento da criação
         //A instância só será criada se o CPF for válido
-        Dev devMeireles = new Dev("Jorge","78965412316","Rio de Janeiro","Nova Iguaçu","Brasil");
-        Dev devSouza= new Dev("Antônio","14965445687","São Paulo","Osasco","Brasil");
+
+      try {
+          Dev devMeireles = new Dev("Jorge", "78965412316", "Rio de Janeiro", "Nova Iguaçu", "Brasil");
+
+
+
+          devMeireles.inscreverBootcamp(bootcamp);
+          System.out.println();
+          System.out.println("Conteúdos Inscritos" +   devMeireles.getConteudosInscritos());
+          System.out.println();
+          System.out.println("Usando o método progredir 1° vez");
+          devMeireles.progredir();
+          System.out.println();
+          System.out.println("---- Depois do método --- ");
+          System.out.println("Conteúdos Inscritos" +   devMeireles.getConteudosInscritos());
+          System.out.println("Conteúdos Concluidos" +   devMeireles.getConteudosConcluidos());
+          System.out.println("Total de XP: " +   devMeireles.calcularXp()+" pontos");
+
+
+
+
+
+
+      }catch (IllegalArgumentException e ){
+          System.out.println("Criação do Dev não foi possível: " + e.getMessage());
+      }
+
 
 
         System.out.println();
@@ -46,38 +71,39 @@ public class Main {
         System.out.println();
 
 
-        devSouza.inscreverBootcamp(bootcamp);
+        try {
+            Dev devSouza= new Dev("Antônio","14965456871","São Paulo","Osasco","Brasil");
 
-        System.out.println("Conteúdos Inscritos" +  devSouza.getConteudosInscritos());
-        System.out.println();
-        System.out.println("Usando o método progredir 2 vez");
-        devSouza.progredir();
-        devSouza.progredir();
-        System.out.println();
-        System.out.println("Depois do método ");
-        System.out.println();
-        System.out.println("Conteúdos Inscritos" +   devSouza.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos" +  devSouza.getConteudosConcluidos());
-        System.out.println("Total de XP: " +  devSouza.calcularXp());
+            devSouza.inscreverBootcamp(bootcamp);
+            System.out.println();
+            System.out.println("Conteúdos Inscritos" +  devSouza.getConteudosInscritos());
+            System.out.println();
+            System.out.println("Usando o método progredir 2° vezes");
+            devSouza.progredir();
+            devSouza.progredir();
+            System.out.println();
+            System.out.println("---- Depois do método --- ");
+
+            System.out.println("Conteúdos Inscritos" +   devSouza.getConteudosInscritos());
+            System.out.println("Conteúdos Concluidos" +  devSouza.getConteudosConcluidos());
+            System.out.println("Total de XP: " +  devSouza.calcularXp() +" pontos");
+
+        }catch (IllegalArgumentException e ){
+            System.out.println("Criação do Dev não foi possível: " + e.getMessage());
+        }
 
 
-        System.out.println();
-        System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||");
-        System.out.println();
 
 
-        devMeireles.inscreverBootcamp(bootcamp);
 
-        System.out.println("Conteúdos Inscritos" +   devMeireles.getConteudosInscritos());
-        System.out.println();
-        System.out.println("Usando o método progredir 1 vez");
-        devMeireles.progredir();
-        System.out.println();
-        System.out.println("Depois do método ");
-        System.out.println();
-        System.out.println("Conteúdos Inscritos" +   devMeireles.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos" +   devMeireles.getConteudosConcluidos());
-          System.out.println("Total de XP: " +   devMeireles.calcularXp());
+
+
+
+
+
+
+
+
 
 
 
