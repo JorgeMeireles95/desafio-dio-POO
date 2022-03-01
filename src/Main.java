@@ -1,7 +1,4 @@
-import br.com.dio.desafio.dominio.Bootcamp;
-import br.com.dio.desafio.dominio.Curso;
-import br.com.dio.desafio.dominio.Dev;
-import br.com.dio.desafio.dominio.Mentoria;
+import br.com.dio.desafio.dominio.*;
 
 import java.time.LocalDate;
 
@@ -30,30 +27,18 @@ public class Main {
 
 
 
-        Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("GTP4");
-        bootcamp.setDescricao("Bootcamp Desenvolvedor Java");
+        Bootcamp bootcamp = new Bootcamp("GTP4","Bootcamp Desenvolvedor Java");
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria1);
 
 
 
-        Dev devJorge = new Dev();
-        devJorge.setNome("Jorge");
-        devJorge.inscreverBootcamp(bootcamp);
-        System.out.println("Bootcamp do Dev "+ devJorge.getNome());
-        System.out.println("Conteúdos Inscritos" + devJorge.getConteudosInscritos());
-        System.out.println();
-        System.out.println("Usando o método progedir 3 vezes");
-        devJorge.progredir();
-        devJorge.progredir();
-        devJorge.progredir();
-        System.out.println();
-        System.out.println("Depois de usar a o método");
-        System.out.println("Conteúdos Inscritos" + devJorge.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos" + devJorge.getConteudosConcluidos());
-        System.out.println("total de XP:  " + devJorge.calcularXp());
+        //Obriga a construtor  a receber todas as informações no momento da criação
+        //A instância só será criada se o CPF for válido
+
+        Dev devMeireles = new Dev("Jorge","78965412316","Rio de Janeiro","Nova Iguaçu","Brasil");
+        Dev devSouza= new Dev("Antônio","14965445687","São Paulo","Osasco","Brasil");
 
 
         System.out.println();
@@ -61,20 +46,38 @@ public class Main {
         System.out.println();
 
 
-        Dev devAntonio = new Dev();
-        devAntonio.setNome("Antônio");
-        System.out.println("Bootcamp do Dev"+ devAntonio.getNome());
-        devAntonio.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos" + devAntonio.getConteudosInscritos());
+        devSouza.inscreverBootcamp(bootcamp);
+
+        System.out.println("Conteúdos Inscritos" +  devSouza.getConteudosInscritos());
         System.out.println();
-        System.out.println("Usando o método progredir 1 vez");
-        devAntonio.progredir();
+        System.out.println("Usando o método progredir 2 vez");
+        devSouza.progredir();
+        devSouza.progredir();
         System.out.println();
         System.out.println("Depois do método ");
         System.out.println();
-        System.out.println("Conteúdos Inscritos" + devAntonio.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos" + devAntonio.getConteudosConcluidos());
-        System.out.println("Total de XP: " + devAntonio.calcularXp());
+        System.out.println("Conteúdos Inscritos" +   devSouza.getConteudosInscritos());
+        System.out.println("Conteúdos Concluidos" +  devSouza.getConteudosConcluidos());
+        System.out.println("Total de XP: " +  devSouza.calcularXp());
+
+
+        System.out.println();
+        System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||");
+        System.out.println();
+
+
+        devMeireles.inscreverBootcamp(bootcamp);
+
+        System.out.println("Conteúdos Inscritos" +   devMeireles.getConteudosInscritos());
+        System.out.println();
+        System.out.println("Usando o método progredir 1 vez");
+        devMeireles.progredir();
+        System.out.println();
+        System.out.println("Depois do método ");
+        System.out.println();
+        System.out.println("Conteúdos Inscritos" +   devMeireles.getConteudosInscritos());
+        System.out.println("Conteúdos Concluidos" +   devMeireles.getConteudosConcluidos());
+          System.out.println("Total de XP: " +   devMeireles.calcularXp());
 
 
 
